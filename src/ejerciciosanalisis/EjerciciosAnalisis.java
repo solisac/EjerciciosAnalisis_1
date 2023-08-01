@@ -62,6 +62,27 @@ public class EjerciciosAnalisis {
     }
     
     public static void luis(){
+        System.out.println("Bienvenido al sistema de cobro");
+      float precio, pago, cambio, faltante;
+        System.out.println("Ingrese el precio del aticulo");
+        precio=leer.nextFloat();
+        System.out.println("¿Cuanto ha pagado el cliente?");
+        pago=leer.nextFloat();
+        
+       cambio=pago-precio;
+       faltante=precio-pago;
+       
+       if (cambio<0){
+           System.out.println("Falta el dinero en el pago. El dinero faltante es: "+faltante);
+       }
+       else
+           if (cambio==0){
+               System.out.println("Se ha pagado exacto. No hay cambio");
+           }
+       else
+               if (cambio>0){
+                   System.out.println("El cambio a dar es: "+cambio);
+               }
         
     }
     
