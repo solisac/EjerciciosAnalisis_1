@@ -17,7 +17,7 @@ public class EjerciciosAnalisis {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        stefy();
+        adrian();
         
     }
     
@@ -48,7 +48,17 @@ public class EjerciciosAnalisis {
     }
     
     public static void adrian(){
-        
+        System.out.println("Bienvenido al sistema de conversión de moneda");
+        double peso=3950.17;
+        System.out.println("Cuanto dinero deseas cambiar:");
+        double dolar=leer.nextDouble();
+        double valor=0;
+        while(dolar>0){
+                valor=dolar*peso;
+            System.out.println("el monto en pesos es:"+valor);
+            System.out.println("Ingresa el 0 para terminar");
+            dolar=leer.nextDouble();
+        } 
     }
     
     public static void luis(){
